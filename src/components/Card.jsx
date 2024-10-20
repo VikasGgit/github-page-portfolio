@@ -1,16 +1,17 @@
 import React from "react";
 
-const Card = ({ image, title, subtitle, description, website, github }) => {
+const Card = ({ image, title, subtitle, description, website, github, github_b }) => {
   return (
     <div className="block max-w-sm m-4 overflow-hidden text-white bg-gray-800 rounded-lg">
       <a href={website} target="_blank" rel="noopener noreferrer">
-        {image ? (
+        {/* Uncomment below block if you want to include the image rendering */}
+        {/* {image ? (
           <img src={image} alt={title} className="w-full" />
         ) : (
           <div className="flex items-center justify-center w-full h-48 text-gray-300 bg-gray-700">
             <p>No Image Available</p>
           </div>
-        )}
+        )} */}
         <div className="p-4">
           <h2 className="mb-2 text-2xl font-bold">{title}</h2>
           <p className="mb-2 text-sm font-medium">{subtitle}</p>
@@ -32,6 +33,16 @@ const Card = ({ image, title, subtitle, description, website, github }) => {
             >
               View on GitHub
             </a>
+            {github_b && (
+              <a
+                href={github_b}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                GitHub Backend
+              </a>
+            )}
           </div>
         </div>
       </a>

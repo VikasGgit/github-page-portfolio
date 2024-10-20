@@ -4,6 +4,8 @@ import { RiReactjsLine } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
+import { PiFileSqlLight } from "react-icons/pi";
+import { FaPython } from "react-icons/fa";
 
 export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
@@ -20,7 +22,7 @@ export const PROFILE = {
 export const ABOUT = {
   text1: "I am learning and looking for MERN interships and Jobs",
   text2:
-    "Final-year student specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js) with practical experience in developing responsive UIs using Material-UI and Tailwind CSS. Proven skills in Redux for state management and integration of Razorpay for secure transactions. Hands-on projects include a comprehensive Ecommerce platform and a visitor register maintenance system. Demonstrated problem-solving abilities through solving 200+ LeetCode and 250+ GeeksforGeeks problems. Actively participated in LeetCode and GFG hackathons, contributing to innovative solutions and gaining valuable software development experience",
+    "Final-year student specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js) with practical experience in developing responsive UIs using Material-UI and Tailwind CSS. Proven skills in Redux for state management and integration of Razorpay for secure transactions. Hands-on projects include a comprehensive Ecommerce platform and a visitor register maintenance system. Demonstrated problem-solving abilities through solving 250+ LeetCode and 300+ GeeksforGeeks problems. Actively participated in LeetCode and GFG hackathons, contributing to innovative solutions and gaining valuable software development experience",
 };
 
 export const PROJECTS = [
@@ -28,12 +30,12 @@ export const PROJECTS = [
     title: "E-commerce Web Application",
     subtitle: "Tech Stack: MERN (MongoDB, Express.js, React.js, Node.js)",
     description: `UI Development: Material-UI (MUI), Tailwind CSS
-State Management: Redux
+    State Management: Redux
 Secure Payments: Razorpay integration
 Features: Login and registration, advanced multi-criteria filtering, fully functional shopping cart, responsive UI, admin dashboard for inventory and financial metrics`,
     website: "https://e-commerce-frontend-5upu.onrender.com/",
     github: "https://github.com/VikasGgit/MERN-E-com",
-    image: "", // Add a valid image URL if available
+    image: "",
   },
   {
     title: "Visitors Register Maintenance Website",
@@ -42,8 +44,19 @@ Features: Login and registration, advanced multi-criteria filtering, fully funct
 Key Features: Secure data handling, intuitive UI, real-time updates
 Admin Link Employee Link`,
     website: "https://register-frontend-zow7.onrender.com/",
-    github: "https://github.com/VikasGgit/Register_frontend",
-    image: "", // Add a valid image URL if available
+    github_frontend: "https://github.com/VikasGgit/Register_frontend",
+    github_backend: "https://github.com/VikasGgit/Register_Backend",
+    image: "", 
+  },
+  {
+     title: "Inventory Management System",
+    subtitle: "Tech Stack: MERN (MongoDB, Express.js, React.js, Node.js)",
+    description: `Developed an innovative microservice for inventory management, streamlining the process of storing and filtering over service 
+items, enhanced user efficiency by enabling real-time updates and simplified searching capabilities.`,
+    website: "https://job-sheet-final.onrender.com/",
+    github_frontend: "https://github.com/VikasGgit/Job-Sheet-frontend",
+    github_backend: "https://github.com/VikasGgit/Job-Sheet-Backend",
+    image: "",
   },
   {
     title: "Learning Projects",
@@ -58,6 +71,17 @@ Admin Link Employee Link`,
 ];
 
 export const SKILLS = [
+  {
+    icon: <FaPython className="text-4xl lg:text-6xl text-cyan-400" />,
+    name: "Python",
+    experience: "1+ years",
+  },
+  {
+    icon: <PiFileSqlLight className="text-4xl lg:text-6xl text-cyan-400" />,
+    name: "SQL",
+    experience: "3 Months",
+  },
+  
   {
     icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-400" />,
     name: "React",

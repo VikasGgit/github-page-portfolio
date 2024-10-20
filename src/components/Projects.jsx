@@ -52,7 +52,8 @@ const Projects = () => {
               subtitle={project.subtitle}
               description={project.description}
               website={project.website}
-              github={project.github}
+              github={project.github_frontend}
+              github_b={project.github_backend || ""}
             />
           </motion.div>
         ))}
